@@ -57,6 +57,9 @@ const deleteTodo = async(id) => {
   await deleteDoc(doc(db,'todos', id))
 
 }
+useEffect(()=>{
+  document.title="Todo Application"
+},[]);
 
 
 
